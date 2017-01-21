@@ -1,3 +1,4 @@
-﻿  main.cpp
-  GameJam2017.vcxproj -> C:\Users\DiJitOL\Desktop\GameJam2017\x64\Debug\GameJam2017.exe
-  GameJam2017.vcxproj -> C:\Users\DiJitOL\Desktop\GameJam2017\x64\Debug\GameJam2017.pdb (Partial PDB)
+﻿  MainMenu.cpp
+  Game.cpp
+  Generating Code...
+sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'

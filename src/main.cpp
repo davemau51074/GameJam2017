@@ -7,7 +7,7 @@
 /// Date/ Start time/ length of time.
 /// 
 /// 
-/// Total Time Taken 5hr 10 min
+/// Total Time Taken 
 /// </summary>
 
 #ifdef _DEBUG 
@@ -30,10 +30,12 @@
 #include "SFML/OpenGL.hpp" 
 
 #include <iostream>
-
+#include"Game.h"
 
 int main()
 {
+	Game game;
+	game.run();
 
 	return 0;
 }
