@@ -1,9 +1,14 @@
-//////////////////////////////////////////////////////////// 
-// Headers for SFML projects
-// include correct library file for release and debug versions
-// include opengl library files
-// include iostream for console window output
-//////////////////////////////////////////////////////////// 
+/// <summary>
+/// @mainpage 
+/// @Author D.J. O'Leary, David Scott, David O'Gorman, John O'Meara
+/// @Version 1.0
+/// @brief 
+/// 
+/// Date/ Start time/ length of time.
+/// 
+/// 
+/// Total Time Taken 5hr 10 min
+/// </summary>
 
 #ifdef _DEBUG 
 #pragma comment(lib,"sfml-graphics-d.lib") 
