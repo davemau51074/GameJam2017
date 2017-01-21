@@ -1,12 +1,12 @@
 #include "Player.h"
 #include "..\include\Player.h"
 
-Player::Player(sf::Texture const & texture, sf::Vector2f pos, float force, float jumpHeight, KeyHandler &keyHandler) :
+Player::Player(sf::Texture const & texture, sf::Vector2f pos, KeyHandler &keyHandler) :
 	m_texture(texture),
 	m_position(pos),
-	m_moveForce(force),
-	m_jumpHeight(jumpHeight),
-	m_keyHandler(keyHandler)
+	m_keyHandler(keyHandler),
+	m_jumpHeight(0.1),
+	m_gravity(3)
 {
 	m_playerSprite.setTexture(m_texture);
 
@@ -18,9 +18,9 @@ Player::Player(sf::Texture const & texture, sf::Vector2f pos, float force, float
 
 void Player::update(double dt)
 {
-	handleKeyInput();
+	handleKeyInput(dt);
 
-
+	//m_position.x += m_currentSpeed;
 
 	m_playerSprite.setPosition(m_position);
 }
@@ -30,19 +30,33 @@ void Player::render(sf::RenderWindow & window)
 	window.draw(m_playerSprite);
 }
 
-void Player::handleKeyInput()
+void Player::handleKeyInput(double dt)
 {
 	sf::Keyboard input;
-
 
 	if (m_keyHandler.isPressed(input.Right) ||
 		m_keyHandler.isPressed(input.D))
 	{
-		m_position.x += m_moveForce;
+		moveRight();
 	}
 	if (m_keyHandler.isPressed(input.Left) ||
 		m_keyHandler.isPressed(input.A))
 	{
-		m_position.x -= m_moveForce;
+		moveLeft();
 	}
+}
+
+void Player::moveRight()
+{
+	m_position.x += 0.2;
+}
+
+void Player::moveLeft()
+{
+	m_position.x -= 0.2;
+}
+
+void Player::jump()
+{
+	
 }

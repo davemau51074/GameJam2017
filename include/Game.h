@@ -26,6 +26,8 @@ protected:
 
 	sf::Texture m_texture;
 
+	sf::Color m_colorA = sf::Color(45, 200, 200, 255);
+
 	
 
 	KeyHandler m_keyHandler;

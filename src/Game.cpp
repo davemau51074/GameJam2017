@@ -5,7 +5,7 @@ Game::Game()
 {
 	loadResources();
 
-	m_player.reset(new Player(m_texture, sf::Vector2f(500, 800), 0.1, 0.1, m_keyHandler));
+	m_player.reset(new Player(m_texture, sf::Vector2f(500, 800), m_keyHandler));
 }
 
 void Game::run()
@@ -39,7 +39,9 @@ void Game::update(double dt)
 
 void Game::render()
 {
-	m_window.clear(sf::Color(220,220,220,255));
+	//m_window.clear(sf::Color(220,220,220,255));
+
+	m_window.clear(m_colorA);
 	m_player->render(m_window);
 	m_window.display();
 }
