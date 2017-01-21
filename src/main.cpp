@@ -23,12 +23,15 @@
 
 #include "SFML/Graphics.hpp" 
 #include "SFML/OpenGL.hpp" 
-
 #include <iostream>
+#include "Game.h"
+#include "Player.h"
+
+
 
 
 int main()
 {
-
-	return 0;
+	Game game;
+	game.run();
 }

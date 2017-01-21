@@ -1,3 +1,20 @@
-﻿  main.cpp
-  GameJam2017.vcxproj -> C:\Users\DiJitOL\Desktop\GameJam2017\x64\Debug\GameJam2017.exe
-  GameJam2017.vcxproj -> C:\Users\DiJitOL\Desktop\GameJam2017\x64\Debug\GameJam2017.pdb (Partial PDB)
+﻿Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z) referenced in function "public: __cdecl Game::Game(void)" (??0Game@@QEAA@XZ)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::String::~String(void)" (__imp_??1String@sf@@QEAA@XZ) referenced in function "public: __cdecl Game::Game(void)" (??0Game@@QEAA@XZ)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::String::~String(void)" (__imp_??1String@sf@@QEAA@XZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QEAA@III@Z) referenced in function "public: __cdecl Game::Game(void)" (??0Game@@QEAA@XZ)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QEAA@III@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::Window::display(void)" (__imp_?display@Window@sf@@QEAAXXZ) referenced in function "protected: void __cdecl Game::render(void)" (?render@Game@@IEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QEAA@EEEE@Z) referenced in function "protected: void __cdecl Game::render(void)" (?render@Game@@IEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __cdecl sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QEAAXAEBVColor@2@@Z) referenced in function "protected: void __cdecl Game::render(void)" (?render@Game@@IEAAXXZ)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QEAA@VVideoMode@1@AEBVString@1@IAEBUContextSettings@1@@Z) referenced in function "public: __cdecl Game::Game(void)" (??0Game@@QEAA@XZ)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __cdecl sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QEAA@VVideoMode@1@AEBVString@1@IAEBUContextSettings@1@@Z)
+Game.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UEAA@XZ) referenced in function "int `public: __cdecl Game::Game(void)'::`1'::dtor$2" (?dtor$2@?0???0Game@@QEAA@XZ@4HA)
+main.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UEAA@XZ)
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Game::run(void)" (?run@Game@@QEAAXXZ) referenced in function main
+C:\SFML-2.3.2\lib\sfml-graphics-d.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\SFML-2.3.2\lib\sfml-audio-d.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\SFML-2.3.2\lib\sfml-system-d.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\SFML-2.3.2\lib\sfml-window-d.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\SFML-2.3.2\lib\sfml-network-d.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\gamejam\Desktop\GGJ17\GameJam2017\x64\Debug\GameJam2017.exe : fatal error LNK1120: 9 unresolved externals

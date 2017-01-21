@@ -1,3 +1,9 @@
-﻿  main.cpp
-  GameJam2017.vcxproj -> C:\Users\DiJitOL\Desktop\GameJam2017\Debug\GameJam2017.exe
-  GameJam2017.vcxproj -> C:\Users\DiJitOL\Desktop\GameJam2017\Debug\GameJam2017.pdb (Partial PDB)
+﻿  Player.cpp
+c:\users\gamejam\desktop\ggj17\gamejam2017\src\player.cpp(15): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\gamejam\desktop\ggj17\gamejam2017\src\player.cpp(35): warning C4101: 'input': unreferenced local variable
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  Game.cpp
+  GameJam2017.vcxproj -> C:\Users\gamejam\Desktop\GGJ17\GameJam2017\Debug\GameJam2017.exe
+  GameJam2017.vcxproj -> C:\Users\gamejam\Desktop\GGJ17\GameJam2017\Debug\GameJam2017.pdb (Partial PDB)
