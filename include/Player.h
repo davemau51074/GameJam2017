@@ -1,5 +1,6 @@
 #pragma once
 #include "KeyHandler.h"
+#include "Waves.h"
 #include "SFML/Graphics.hpp" 
 
 enum MoveState
@@ -33,8 +34,14 @@ private:
 	sf::Sprite m_playerSprite;
 	sf::Texture const & m_texture;
 
+	Waves m_wave;
+
 	float m_jumpHeight;
 	MoveState m_moveState;
+
+	sf::Color m_colourA;
+	sf::Color m_colourB;
+	sf::Color m_colourC;
 
 	KeyHandler &m_keyHandler;
 };

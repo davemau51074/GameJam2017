@@ -1,11 +1,11 @@
 #include "Game.h"
 
 Game::Game()
-	: m_window(sf::VideoMode(1440, 900, 32), "Movement Test", sf::Style::Default)
+	: m_window(sf::VideoMode(800, 600, 32), "Movement Test", sf::Style::Default)
 {
 	loadResources();
 
-	m_player.reset(new Player(m_texture, sf::Vector2f(500, 800), m_keyHandler));
+	m_player.reset(new Player(m_texture, sf::Vector2f(100, 500), m_keyHandler));
 }
 
 void Game::run()

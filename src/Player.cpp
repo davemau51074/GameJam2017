@@ -6,7 +6,8 @@ Player::Player(sf::Texture const & texture, sf::Vector2f pos, KeyHandler &keyHan
 	m_position(pos),
 	m_keyHandler(keyHandler),
 	m_jumpHeight(0.1),
-	m_gravity(3)
+	m_gravity(3),
+	m_moveState(MoveState::Stand)
 {
 	m_playerSprite.setTexture(m_texture);
 
@@ -20,9 +21,9 @@ void Player::update(double dt)
 {
 	handleKeyInput(dt);
 
-	//m_position.x += m_currentSpeed;
-
 	m_playerSprite.setPosition(m_position);
+
+
 }
 
 void Player::render(sf::RenderWindow & window)
@@ -34,15 +35,26 @@ void Player::handleKeyInput(double dt)
 {
 	sf::Keyboard input;
 
-	if (m_keyHandler.isPressed(input.Right) ||
-		m_keyHandler.isPressed(input.D))
+	if (m_keyHandler.isPressed(input.D))
 	{
 		moveRight();
 	}
-	if (m_keyHandler.isPressed(input.Left) ||
-		m_keyHandler.isPressed(input.A))
+	if (m_keyHandler.isPressed(input.A))
 	{
 		moveLeft();
+	}
+
+	if (m_keyHandler.isPressed(input.Up))
+	{
+		m_wave = Waves(m_colourA, m_position);
+	}
+	if (m_keyHandler.isPressed(input.Left))
+	{
+		m_wave = Waves(m_colourB, m_position);
+	}
+	if (m_keyHandler.isPressed(input.Right))
+	{
+		m_wave = Waves(m_colourC, m_position);
 	}
 }
 

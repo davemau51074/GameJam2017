@@ -23,11 +23,13 @@
     <ClCompile Include="src\KeyHandler.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Waves.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\KeyHandler.h" />
     <ClInclude Include="include\Player.h" />
+    <ClInclude Include="include\Waves.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C64DE893-2293-468B-855D-DAF502E2DAED}</ProjectGuid>
